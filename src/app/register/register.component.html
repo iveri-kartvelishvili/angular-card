@@ -1,0 +1,20 @@
+<div class="form-group col-md-6 m-auto mt-2" >
+    <input 
+    [(ngModel)]="myperson.firstname"
+    class="form-control mt-2" type="text" placeholder="firstname">
+    <input 
+    [(ngModel)]="myperson.lastname"
+    class="form-control mt-2" type="text" placeholder="lastname">
+    <input 
+    [(ngModel)]="myperson.img"
+    class="form-control mt-2" type="text" placeholder="img">
+    <select
+    [(ngModel)]="myperson.gender"
+    class="form-select mt-2" name="" id="">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <button 
+    (click)="save()"
+    class="col-md-3 d-block m-auto mt-2 btn btn-primary">Save</button>
+</div>

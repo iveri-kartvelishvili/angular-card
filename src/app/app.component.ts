@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Person } from './app.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-card';
+  arr:any[] = []
+  myperson:Person[] = []
+
+save(event:Person){
+   this.arr.push(event)
+}
 }
